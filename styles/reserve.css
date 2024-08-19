@@ -117,11 +117,13 @@
 .appointment-input input{
     padding: 1%;
     width: 80%;
+    font-size: 1.2em;
 }
 
 .appointment select{
     padding: 1%;
     width: 83%;
+    font-size: 1.2em;
 
 }
 .title-section{
