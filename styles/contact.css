@@ -19,7 +19,20 @@
     position: relative;
     color: #0c00ad; /* Ensure the text color is visible on the image */
     padding-left: 5%; 
+    animation: slideLeft 0.5s ease-out;
 }
+
+
+@keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateY(200px);
+    } 
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 
 .contact-hero-header-content{
     position: relative;

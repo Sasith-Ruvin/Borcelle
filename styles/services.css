@@ -18,8 +18,21 @@
     background-repeat: no-repeat;
     position: relative;
     color: #0c00ad; /* Ensure the text color is visible on the image */
-    padding-left: 5%; /* Adds space from the left edge */
+    padding-left: 5%;
+    animation: slideLeft 0.5s ease-out;
 }
+
+
+@keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateY(200px);
+    } 
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 
 .services-hero-header-content {
     position: relative;
@@ -80,6 +93,19 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
+}
+
+@media (max-width:760px){
+    .main-text{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-text p{
+        font-size: 0.8em;
+        width: 80%;
+    }
+
 }
 .main-text h2{
     font-size: 2em;
